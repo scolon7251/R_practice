@@ -95,7 +95,7 @@ bird_df <- read.table('babybirds.txt', header=TRUE)
 pairs(bird_df)
 ```
 
-![](PSU_MLR_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png)
+![](unnamed-chunk-4-1.png)
 
 ``` r
 bird_model <- lm(Vent ~ O2 + CO2, data=bird_df)
@@ -194,7 +194,7 @@ library(ggplot2)
 ggplot(pastry_df, aes(y = Rating, x= Moisture, colour= Sweetness, shape = Sweetness)) + geom_point() +geom_smooth(method='lm', fill=NA)
 ```
 
-![](PSU_MLR_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-9-1.png)
+![](unnamed-chunk-9-1.png)
 
 ### Perform Simple and Multiple Regressions on Pastry Data
 
@@ -356,7 +356,7 @@ curve(predict(rabbit_lm,newdata=data.frame(Area=x,Group=3)),col=3,add=T)
 legend('bottomright', levels(factor(rabbit_df$Group)), pch = 16, col =  which(levels(rabbit_df$Group) %in% levels(factor(rabbit_df$Group))))
 ```
 
-![](PSU_MLR_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-14-1.png)
+![](unnamed-chunk-14-1.png)
 
 ### So, we see that as risk Area increases, size of Infarction tends to increase.
 
@@ -482,6 +482,6 @@ curve(predict(beet_lm,newdata=data.frame(Nit=x,Treat=3)),col=3,add=T)
 legend('bottomright', levels(factor(beet_df$Treat)), pch = 16, col =  which(levels(beet_df$Treat) %in% levels(factor(beet_df$Treat))))
 ```
 
-![](PSU_MLR_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-22-1.png)
+![](unnamed-chunk-22-1.png)
 
 ### So, we see a clear linear relationship between amount of nitrogen and yield of sugar beets

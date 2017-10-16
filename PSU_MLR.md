@@ -57,7 +57,7 @@ data_subset$Weight <- as.numeric(data_subset$Weight)
 pairs(data_subset)
 ```
 
-![](PSU_MLR_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-2-1.png)
+![](github.com/scolon7251/R_practice/blob/master/unnamed-chunk-2-1.png)
 
 ### It appears there's collinearity in the height and weight, although PIQ doesn't look linearly related to the other variables.
 
